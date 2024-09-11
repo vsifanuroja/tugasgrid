@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f0;
+            color: #333;
+            margin: 0;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff99cc;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            grid-gap: 15px;
+            justify-items: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .grid-item {
+            position: relative;
+            /* Required for absolute positioning of caption */
+            overflow: hidden;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffccdd;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 1px;
+        }
+
+        .grid-item:hover {
+            transform: scale(1.05);
+        }
+
+        .caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(48, 17, 33, 0.7);
+            color: #eb9c9c;
+            padding: 10px;
+            font-size: 14px;
+            text-align: center;
+            box-sizing: border-box;
+            border-top: 1px solid #ffffff;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .grid-item:hover .caption {
+            transform: translateY(0);
+            /* Show caption on hover */
+        }
+
+        @media (max-width: 600px) {
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Beauty of Nature’s Canvas</h1>
+
+    <div class="gallery">
+        <div class="grid-item">
+            <img src="fotosatu.jpeg" alt="Photo 1">
+            <div class="caption">The beauty of a flower is a joy forever.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotodua.jpeg" alt="Photo 2">
+            <div class="caption">Every flower blooms in its own time.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fototiga.jpeg" alt="Photo 3">
+            <div class="caption">The flower that follows the sun does so even in cloudy days</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoempat.jpeg" alt="Photo 4">
+            <div class="caption">In the garden of life, plant only love, and watch it grow.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotolima.jpeg" alt="Photo 5">
+            <div class="caption">"Every flower must grow through dirt.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoenam.jpeg" alt="Photo 6">
+            <div class="caption">Just like a flower, we too have the ability to grow and bloom</div>
+        </div>
+        <div class="grid-item">
+            <img src="fototuju.jpeg" alt="Photo 7">
+            <div class="caption">The flower that blooms in adversity is the rarest and most beautiful of all</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotodelapan.jpeg" alt="Photo 8">
+            <div class="caption">Bloom where you are planted.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotosembilan.jpeg" alt="Photo 9">
+            <div class="caption">Every flower is a soul blossoming in nature.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotosepulu.jpeg" alt="Photo 10">
+            <div class="caption">The flower is the poetry of reproduction</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotosebela.jpeg" alt="Photo 11">
+            <div class="caption">The flower doesn't dream of the bee. It blossoms and the bee comes.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoduabe.jpeg" alt="Photo 12">
+            <div class="caption">Love is the flower you've got to let grow</div>
+        </div>
+        <div class="grid-item">
+            <img src="fototig.jpeg" alt="Photo 13">
+            <div class="caption">Earth laughs in flowers.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoemp.jpeg" alt="Photo 14">
+            <div class="caption">Let the beauty of your heart speak.</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotolim.jpeg" alt="Photo 15">
+            <div class="caption">The .tiny seed knew that in order to grow</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoena.jpeg" alt="Photo 16">
+            <div class="caption">Caption for Photo 16</div>
+        </div>
+        <div class="grid-item">
+            <img src="fototujub.jpeg" alt="Photo 17">
+            <div class="caption">Nature’s artistry at its finest</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotod.jpeg" alt="Photo 18">
+            <div class="caption">A picture-perfect paradise</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotosemb.jpeg" alt="Photo 19">
+            <div class="caption">Love is like the sunrise, breathtaking and full of possibilities</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoduap.jpeg" alt="Photo 20">
+            <div class="caption">Witnessing the captivating hues of sunset</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoduasat.jpeg" alt="Photo 21">
+            <div class="caption">olden rays heralding the end of the day. Sunset, always enchanting</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotoo.jpeg" alt="Photo 22">
+            <div class="caption">Nature is the art of God</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotobungaw.jpeg" alt="Photo 23">
+            <div class="caption">Endless beauty</div>
+        </div>
+        <div class="grid-item">
+            <img src="fotobunga.jpeg" alt="Photo 24">
+            <div class="caption">Where the wild things are</div>
+        </div>
+    </div>
+</body>
+
+</html>
